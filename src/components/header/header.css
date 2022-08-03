@@ -1,0 +1,90 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+header .header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* -------CTA------- */
+
+.cta {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 5rem;
+    bottom: 10rem;
+}
+
+.social-links::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+
+header .ahmet img {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 12rem 12rem 0 0;
+    padding: 5px;
+    border: 2px solid var(--color-primary);
+    transition: var(--trans-ease);
+    cursor: pointer;
+
+}
+
+header .ahmet img:hover {
+    padding: 0;
+    transform: rotate(0)
+}
+
+header .scroll__down {
+    position: absolute;
+    right: 5rem;
+    bottom: 10rem;
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE SETTINGS */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+
+}
+
+/* Mobiles */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .social-links,
+    .scroll__down {
+        display: none;
+    }
+}
