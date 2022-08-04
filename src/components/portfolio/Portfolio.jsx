@@ -1,3 +1,4 @@
+import React from 'react'
 import './portfolio.css'
 import { projects } from "../../data"
 

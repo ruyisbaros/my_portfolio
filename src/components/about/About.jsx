@@ -1,3 +1,4 @@
+import React from 'react'
 import "./about.css"
 import ahmet from "../../assets/a2.jpg"
 import { MdWork } from "react-icons/md"

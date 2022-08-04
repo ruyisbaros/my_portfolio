@@ -1,3 +1,4 @@
+import React from 'react'
 import CTA from './CTA'
 import './header.css'
 import ahmet from "../../assets/ahmet.jpg"

@@ -1,3 +1,4 @@
+import React from 'react'
 import './experience.css'
 import { AiFillHtml5 } from "react-icons/ai"
 import { DiCss3 } from "react-icons/di"
@@ -62,7 +63,7 @@ const Experience = () => {
               <BsBootstrap className="experience__details-icons" />
               <div>
                 <h4>Bootstrap</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
@@ -74,7 +75,7 @@ const Experience = () => {
               <AiFillGithub className="experience__details-icons" />
               <div>
                 <h4>Git - Github</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
@@ -95,7 +96,7 @@ const Experience = () => {
               <SiMongodb className="experience__details-icons" />
               <div>
                 <h4>MongoDB</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
