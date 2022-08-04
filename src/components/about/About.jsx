@@ -1,5 +1,5 @@
 import "./about.css"
-import ahmet from "../../assets/ahmet.jpg"
+import ahmet from "../../assets/a2.jpg"
 import { MdWork } from "react-icons/md"
 import { FiUsers } from "react-icons/fi"
 import { AiOutlineFundProjectionScreen } from "react-icons/ai"

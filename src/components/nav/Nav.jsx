@@ -26,11 +26,11 @@ const Nav = () => {
                 <AiOutlineUser />
                 <span>About</span>
             </a>
-            <a href="#experience" className={activeNav === "#experience" ? "active" : ""}
-                onClick={() => setActiveNav("#experience")}
+            <a href="#skills" className={activeNav === "#skills" ? "active" : ""}
+                onClick={() => setActiveNav("#skills")}
             >
                 <HiOutlineDesktopComputer />
-                <span>Experiences</span>
+                <span>Skills</span>
             </a>
             <a href="#portfolio" className={activeNav === "#portfolio" ? "active" : ""}
                 onClick={() => setActiveNav("#portfolio")}
