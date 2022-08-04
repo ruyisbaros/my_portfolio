@@ -20,7 +20,7 @@ const About = () => {
                         <article className="about__card">
                             <MdWork className="about_icon" />
                             <h5>Experience</h5>
-                            <small>+2 Years</small>
+                            <small>1+ Years</small>
                         </article>
                         <article className="about__card">
                             <FiUsers className="about_icon" />
@@ -33,7 +33,7 @@ const About = () => {
                             <small>10+ Completed</small>
                         </article>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias veniam ratione, explicabo necessitatibus minus nobis ullam, numquam velit nostrum ea laboriosam maxime enim voluptatibus odit in consequatur impedit suscipit temporibus nihil assumenda magnam! Error ratione ea, accusantium iure minus, ipsa quos iste eveniet saepe voluptates omnis dolorum. Iusto, velit eos.</p>
+                    <p>I was appointed as a Class Tutor at DCI-Berlin in August 2021, where I started as a student , due to my advanced level in coding. I guide students to develop their MERN stack skills. We have been developing small and medium sized MERN Stack projects together. In the meantime, I am deepening my existing knowledge even more. <br />I can handle coding a modern a website front-to-end, end-to-front. In this sense, I can effectively use many of most modern Full Stack Web Development tools such as JavaScript, React, HTML5, CSS3, NodeJS,Express, MongoDB etc.<br /> I know fundamentals of Java and Python. And now I'm improving myself in MySQL. </p>
 
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>
                 </div>
