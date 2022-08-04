@@ -1,0 +1,24 @@
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials>h4 {
+    text-align: center;
+}
+
+.testimonials__container {
+    width: 40%;
+
+}
+
+.client__avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: .4rem solid var(--color-primary-variant);
+}

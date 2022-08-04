@@ -42,3 +42,24 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+.portfolio__item-cta .btn {
+    padding: 0.15rem .85rem;
+}
+
+/* RESPONSIVE SETTINGS */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}

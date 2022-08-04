@@ -38,18 +38,19 @@ const Nav = () => {
                 <RiServiceLine />
                 <span>Portfolio</span>
             </a>
-            <a href="#contact" className={activeNav === "#contact" ? "active" : ""}
-                onClick={() => setActiveNav("#contact")}
-            >
-                <MdContactMail />
-                <span>Contact</span>
-            </a>
             <a href="#testimonials" className={activeNav === "#testimonials" ? "active" : ""}
                 onClick={() => setActiveNav("#testimonials")}
             >
                 <BiCommentDetail />
                 <span>Testimonials</span>
             </a>
+            <a href="#contact" className={activeNav === "#contact" ? "active" : ""}
+                onClick={() => setActiveNav("#contact")}
+            >
+                <MdContactMail />
+                <span>Contact</span>
+            </a>
+
         </nav>
     )
 }
