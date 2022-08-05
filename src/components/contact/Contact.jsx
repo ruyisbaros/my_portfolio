@@ -4,8 +4,28 @@ import { AiOutlineMail } from "react-icons/ai"
 import { BsMessenger } from "react-icons/bs"
 import { BsWhatsapp } from "react-icons/bs"
 import { BsArrowUpSquareFill } from "react-icons/bs"
+import { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+import Loading from '../loadingAnimation/Loading'
 
 const Contact = () => {
+
+    const form = useRef()
+    const [isSend, setIsSend] = useState(false)
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsSend(true)
+        emailjs.sendForm('service_9vbawhh', 'template_f250sac', form.current, 'HtuViRUxKuZjTGzYq')
+            .then((result) => {
+                console.log(result.text);
+                setIsSend(false)
+                e.target.reset()
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <section id="contact">
             <h4>Get in Touch</h4>
@@ -31,11 +51,13 @@ const Contact = () => {
                         <a href="https://wa.me/+4917673881902" target="_blank" rel="noreferrer">Text me through Whatsapp</a>
                     </article>
                 </div>
-                <form action="">
+                <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Your Full Name..." required />
                     <input type="email" name="email" placeholder="Your Email..." required />
                     <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-                    <button type="submit" className="btn btn-primary">Send</button>
+                    <button type="submit" className="btn btn-primary btn-anim">
+                        {isSend ? <Loading /> : "Send Message"}
+                    </button>
                 </form>
                 <a href="#header" className="scroll__up">
                     <BsArrowUpSquareFill />
